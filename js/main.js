@@ -78,7 +78,7 @@ if (document.querySelector('.filter-price')) {
 		step: 1,
 		range: {
 			'min': 0,
-			'max': 900
+			'max': 700
 		},
 		format: wNumb({
 			decimals: 0
