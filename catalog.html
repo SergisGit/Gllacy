@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gllacy</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body-catalog">
+
+	<header class="main-header">
+
+		<nav class="main-nav flex">
+			<a href="index.html" class="index-href">
+				<svg class="navigation-logo-svg" width="154" height="63">
+						<use xlink:href="#navigation-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+			</a>
+			<ul class="main-menu">
+				<li class="main-menu-href href-active">
+					<a href="catalog.html">Каталог</a>
+					<ul class="sub-menu">
+						<li class="catalog-novelties">Новинки</li>
+						<li class="sub-menu-current"><a href="catalog.html">Сливочное</a></li>
+						<li><a href="#">Щербеты</a></li>
+						<li><a href="#">Фруктовый лёд</a></li>
+						<li><a href="#">Мелорин</a></li>
+					</ul>
+				</li>
+				<li class="main-menu-href"><a href="#">Доставка и оплата</a></li>
+				<li class="main-menu-href"><a href="#">О Компании</a></li>
+			</ul>
+			<div class="user-block flex">
+
+				<div class="action-block search-action">
+					<svg class="search-icon-svg" width="17" height="17">
+							<use xlink:href="#search-icon" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+					<div class="action-wrapper">
+						<form action="https://echo.htmlacademy.ru" method="post" class="search-form">
+							<div class="label-box search-label-box">
+								<input type="search" class="search-input" id="search-input" name="search-input" placeholder="Что ищем?" required>
+								<label for="search-input">Что ищем?</label>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="action-block enter-action">
+					<svg class="enter-icon-svg" width="20" height="20">
+							<use xlink:href="#enter-icon" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+					<span class="user-enter">Вход</span>
+					<div class="action-wrapper">
+						<form action="https://echo.htmlacademy.ru" method="get" class="enter-form">
+							<div class="label-box enter-label-box">
+								<input type="email" name="user-email" id="user-email" placeholder="Электронная почта" required>
+								<label for="user-email">Электронная почта</label>
+							</div>
+							<div class="label-box enter-label-box">
+								<input type="password" name="user-password" id="user-password" placeholder="Пароль" required>
+								<label for="user-password">Пароль</label>
+							</div>
+							<button class="btn  btn-XS">Войти</button>
+							<div class="registration-links">
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="action-block cart-action cart-action-full">
+					<svg class="basket-icon-svg" width="21" height="21">
+							<use xlink:href="#basket-icon" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+					<span class="product-amount">2 товара</span>
+					<div class="action-wrapper">
+						<div class="cart-block clearfix">
+
+							<table class="cart-table">
+								<tr class="cart-product">
+									<td class="td-product-del">
+										<a href="#" class="cart-del-link" title="Удалить">
+												&#10005;
+											</a>
+									</td>
+									<td class="td-product-img">
+										<img class="cart-product-img" src="img/product-01.png" width="33" height="33" alt="01">
+									</td>
+									<td class="td-product-link">
+										<a class="cart-product-link" href="#">
+												Пломбир с апельсиновым джемом
+											</a>
+									</td>
+									<td class="td-product-price">
+										<span class="cart-product-weight">1,5 кг</span>
+										<span class="cart-product-price">х 200 руб.</span></td>
+									<td class="td-product-cost">
+										300 руб.
+									</td>
+								</tr>
+								<tr class="cart-product">
+									<td class="td-product-del">
+										<a class="cart-del-link" href="#" title="Удалить">
+												&#10005;
+											</a>
+									</td>
+									<td class="td-product-img">
+										<img class="cart-product-img" src="img/product-03.png" width="33" height="33" alt="01">
+									</td>
+									<td class="td-product-link">
+										<a class="cart-product-link" href="#">
+												Клубничный пломбир с присыпкой из белого шоколада
+											</a>
+									</td>
+									<td class="td-product-price">
+										<span class="cart-product-weight">1,5 кг</span>
+										<span class="cart-product-price">х 300 руб.</span>
+									</td>
+									<td class="td-product-cost">
+										450 руб.
+									</td>
+								</tr>
+							</table>
+
+							<p class="cart-total">Итого: <span class="total-cost">750 руб.</span></p>
+							<a href="#" class="btn btn-XS">Оформить заказ</a>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<div class="breadcrumbs-container flex">
+			<div class="breadcrumbs">
+				<a href="index.html">Главная</a>
+				<a href="catalog.html">Каталог</a>
+				<span>Сливочное</span>
+			</div>
+
+			<div class="schedule">
+				<p class="schedule-time">С 10 до 20, ежедневно</p>
+				<p class="schedule-phone">8 812 450-25-25</p>
+			</div>
+		</div>
+
+	</header>
+
+	<main class="main-inner">
+		<h1 class="page-title">Сливочное мороженое</h1>
+
+		<form action="https://echo.htmlacademy.ru" method="post" class="catalog-form flex">
+
+			<fieldset class="catalog-filter filter-sorting">
+				<legend>Сортировка:</legend>
+				<div class="select-wrapper">
+					<select class="select" name="sorting" id="sorting">
+            <option value="popular">по популярности</option>
+            <option value="low-price">сначала недорогие</option>
+            <option value="high-price">сначала дорогие</option>
+           <option value="fat">по жирности</option>
+          </select>
+					<span class="select-appearance"></span>
+				</div>
+			</fieldset>
+			
+			<fieldset class="catalog-filter filter-price">
+				<legend>
+					Цена: 
+					<input type="text" id = "filter-price-min" name="price-min" pattern="^(?:\d|[1-9]\d|[1-8]\d\d|900)$" value="100"> руб. — 
+					<input type="text" id = "filter-price-max" name="price-max" pattern="^(?:\d|[1-9]\d|[1-8]\d\d|900)$" value="500"> руб.
+				</legend>
+				<div class="filter-wrapper">
+					<div class="filter-range" id="filter-range">
+						<div class="filter-scale">
+							<div class="filter-bar"></div>
+							<div class="filter-toggle filter-min-toggle"></div>
+							<div class="filter-toggle filter-max-toggle"></div>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			
+			<fieldset class="catalog-filter filter-radio">
+				<legend>Жирность:</legend>
+				<div class="filter-wrapper">
+					<input type="radio" name="fat" value="0%" id="fat-1" disabled>
+					<label for="fat-1">0%</label>
+					<input type="radio" name="fat" value="less 10%" id="fat-2" checked>
+					<label for="fat-2">до 10%</label>
+					<input type="radio" name="fat" value="less 30%" id="fat-3">
+					<label for="fat-3">до 30%</label>
+					<input type="radio" name="fat" value="more 30%" id="fat-4">
+					<label for="fat-4">выше 30%</label>
+				</div>
+			</fieldset>
+			
+			<fieldset class="catalog-filter filter-checkbox">
+				<legend>Наполнители:</legend>
+				<div class="filter-wrapper flex">
+					<input type="checkbox" name="filling" value="chocolate" id="filling-1">
+					<label for="filling-1">шоколадные</label>
+					<input type="checkbox" name="filling" value="sugar" checked id="filling-2">
+					<label for="filling-2">сахарные присыпки</label>
+					<input type="checkbox" name="filling" value="fruit" id="filling-3">
+					<label for="filling-3">фрукты</label>
+					<input type="checkbox" name="filling" value="syrup" id="filling-4">
+					<label for="filling-4">сиропы</label>
+					<input type="checkbox" name="filling" value="jam" id="filling-5">
+					<label for="filling-5">джемы</label>
+				</div>
+			</fieldset>
+			
+			<button class="catalog-form-btn" type="submit">Применить</button>
+		</form>
+
+		<div class="catalog flex">
+			<div class="catalog-item item-01">
+				<img src="img/product-01.png" alt="01">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">310</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-02">
+				<img src="img/product-02.png" alt="02">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">380</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочно-кофейное с кусочками шоколада</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-03">
+				<img src="img/product-03.png" alt="03">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">355</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочно-клубничное с присыпкой из белого шоколада</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-04">
+				<img src="img/product-04.png" alt="04">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">415</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочное крем-брюле с карамельной подливкой</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-05">
+				<img src="img/product-05.png" alt="05">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">325</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочное с брусничным джемом</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-06">
+				<img src="img/product-06.png" alt="06">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">410</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочно-черничное с цельными ягодами черники</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-07">
+				<img src="img/product-07.png" alt="07">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">375</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочно-лимонное с карамельной присыпкой</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-08">
+				<img src="img/product-08.png" alt="08">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">320</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочное с шоколадной стружкой</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-09">
+				<img src="img/product-09.png" alt="09">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">440</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочно-ванильное с кусочками шоколада</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-10">
+				<img src="img/product-10.png" alt="10">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">435</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочноe с ментоловым сиропом</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-11">
+				<img src="img/product-11.png" alt="11">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">355</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочное с кусочками черного шоколада</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+			<div class="catalog-item item-12">
+				<img src="img/product-12.png" alt="12">
+				<div class="catalog-item-info">
+					<div class="price-block">
+						<span class="item-price">420</span>
+						<span class="item-currency">&#8381;</span><span class="weight-unit">/кг</span>
+					</div>
+					<span class="catalog-item-discription">Сливочное с мятным сиропом</span>
+				</div>
+				<div class="catalog-item-overlay">
+					<a href="#" class="btn btn-XS">Быстрый просмотр</a>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="paginator-wrapper clearfix">
+			<div class="paginator">
+				<span class="paginator-prev paginator-disabled">&#10094;</span>
+				<span class="paginator-btn current-page">1</span>
+				<a class="paginator-btn" href="#">2</a>
+				<a class="paginator-btn" href="#">3</a>
+				<a class="paginator-btn" href="#">4</a>
+				<a class="paginator-btn" href="#">5</a>
+				<a class="paginator-next" href="#">&#10095;</a>
+			</div>
+		</div>
+
+	</main>
+
+		<footer class="main-footer flex">
+			<div class="footer-socials">
+				<a href="#">
+					<svg class="twit-svg" width="31" height="31">
+						<use xlink:href="#twit" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="Inst-svg" width="31" height="31">
+						<use xlink:href="#Inst" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="FB-svg" width="31" height="31">
+						<use xlink:href="#FB" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="VK-svg" width="31" height="31">
+						<use xlink:href="#VK" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="for-partners">
+				<ul>
+					<li>
+						<span class="herat-symbol">&#10084;</span><a href="#" class="for-providers">Для поставщиков</a>
+					</li>
+					<li><a href="#">О производстве</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">Экологические стандарты</a></li>
+				</ul>
+			</div>
+			<div class="footer-copyright">
+				<a href="#" class="academy-logo-href">
+					<svg class="HTML_Academy-logo-svg" width="108" height="38">
+						<use xlink:href="#HTML_Academy-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+				</a><br>
+				<span>Сделано в</span>
+				<a href="#" class="academy-href">HTML Academy</a>
+				<span>© 2016</span>
+			</div>
+		</footer>
+
+
+		<!-- HEADER SVG -->
+		<svg display="none" xmlns="http://www.w3.org/2000/svg">
+		<symbol id="navigation-logo" viewBox="0 0 153.094 63.25" >
+			<path class="svg-white" d="M172.252 54.327c-1.742-1.855-4.228-2.08-7-2.08h-.236a13.545 13.545 0 0 0-8.977-4.4c-3.5-.227-6.363-.225-8.835.831.083-.669.152-1.546.209-2.224a4.274 4.274 0 0 0 1.635.211c3.068 0 6.287-2.584 6.567-8.248.133-3.125-.38-5.411-1.485-6.563a2.663 2.663 0 0 0-1.943-.867c-1.647 0-3.189 1.443-4.394 4.056 0-.286-.007-.539-.011-.77-.008-.478-.015-.872-.015-1.313 0-1.105-.053-1.731-1.137-1.731a1.533 1.533 0 0 0-1.081.48 2.559 2.559 0 0 0-.606 1.939c.027 1.384.032 2.785.016 4.281-.5 2.245-1.405 4.011-2.339 4.7a17.468 17.468 0 0 0 1.113-4.254c.416-3.022-.042-5.638-1.227-7a2.1 2.1 0 0 0-1.986-.818 3.606 3.606 0 0 0-2.11 1.259.941.941 0 0 0-1.251-.341c-2.581 1.022-4.222 4.027-4.39 8.038a8.055 8.055 0 0 0 1.886 5.987 4.312 4.312 0 0 0 3.153 1.4 4.586 4.586 0 0 0 3.656-2.164 4.579 4.579 0 0 0 3.352-2.005c-.119 2.493-.31 4.939-.567 7.3a17.977 17.977 0 0 0-5.191 6.54c-1.982 3.934-1.764 7.546-.722 9.239a2.032 2.032 0 0 0 1.677 1.114c3.089 0 5.571-8.574 6.777-16.015a14.878 14.878 0 0 1 8.433-1.97 11.58 11.58 0 0 1 6.81 2.184 8.432 8.432 0 0 0-5.887 7.093 5.578 5.578 0 0 0 1.123 4.43 4.186 4.186 0 0 0 3.51 1.395 6.062 6.062 0 0 0 4.354-2.008 8.591 8.591 0 0 0 1.849-6.372 9.2 9.2 0 0 0-.605-2.767c3.908.64 6.258 3.985 6.055 8.758a10.014 10.014 0 0 1-9.894 9.407c-3 0-5.2-.734-6.357-2.12a4.525 4.525 0 0 1-.873-3.772c.029-.144.058-.269.083-.378a1.043 1.043 0 0 0-.052-.951.643.643 0 0 0-.531-.237 1.715 1.715 0 0 0-.386.055 3.443 3.443 0 0 0-2.479 3.194c0 2.937 3.13 6.1 10 6.1 7.138 0 12.435-4.329 12.885-11.1a9.516 9.516 0 0 0-2.576-7.523zm-34.958-20.538a12.444 12.444 0 0 0-.58 5.411 6.581 6.581 0 0 0 2.586 4.921 1.513 1.513 0 0 1-2.041-.337 6.59 6.59 0 0 1-1.286-4.741 10.554 10.554 0 0 1 1.321-5.254zm4.381 4.738a9.743 9.743 0 0 1-1.008 4.131c-1.171-.72-1.665-2.5-1.726-3.915-.126-2.524.94-4.694 1.789-4.938a.338.338 0 0 1 .2.126c.47.498.902 2.148.745 4.597zm7.328 6.1a2.2 2.2 0 0 1-1.394-.39l.064-1.027c1.053-6.795 3.108-9.673 3.748-9.673a.317.317 0 0 1 .244.132c.457.486.869 2.161.657 5.4-.248 3.484-1.49 5.562-3.322 5.562zm-8.339 19.088a.425.425 0 0 1-.28-.233c-.485-.785-.561-3.245 1.219-6.806a15.363 15.363 0 0 1 2.142-3.214c-1.038 6.638-2.497 9.973-3.081 10.257zm22.624-2.779a2.756 2.756 0 0 1-2.037.916h-.106a2.408 2.408 0 0 1-1.9-.837 3.858 3.858 0 0 1-.583-3.126 5.928 5.928 0 0 1 4.95-5 7.025 7.025 0 0 1 1.012 3.342 6.338 6.338 0 0 1-1.336 4.709zm-30.7-14.2c-.706-.257-1.436-1.93-.9-8.443.288-3.707.407-5.851-.485-6.815a1.625 1.625 0 0 0-1.243-.51c-2.142 0-4.206 2.607-5.643 5.732a62.808 62.808 0 0 1 .461-6.927 10.828 10.828 0 0 0 5.118-5.162c1.819-3.574 1.584-7.381.411-9.294a2.047 2.047 0 0 0-1.662-1.146c-2.716 0-5.229 5.687-6.433 14.523a8.745 8.745 0 0 1-3.616.077 5.491 5.491 0 0 1-.89-.235 6.814 6.814 0 0 0 2.914-5.475 5.952 5.952 0 0 0-1.413-4.5 7.23 7.23 0 0 0-5.263-2.1c-.119 0-.24-.006-.362-.006-4.45 0-9.151 2.4-9.528 6.991-.385 4.034 3.193 6.385 6.652 8.658l.7.457c3.306 2.219 6.235 4.527 5.763 8.348-.383 3.134-4.334 5.658-8.542 5.332a7.315 7.315 0 0 1-5.2-2.563 6.725 6.725 0 0 1-1.432-5.144c.266-1.976 1.128-3.487 3.093-5.41a1.247 1.247 0 0 0 .507-1.26.773.773 0 0 0-.986-.382 8.416 8.416 0 0 0-3.021 1.227 7.593 7.593 0 0 0-2.288 5.183c-.237 4.214 1.929 9.557 8.814 10.745a12.461 12.461 0 0 0 2.091.179c5.606 0 10.063-3.777 10.369-8.787.271-4.7-3.352-7.339-6.772-9.45l-.375-.226c-3.318-2.01-6.453-3.908-5.965-7.635.385-2.849 3.109-4.125 5.637-4.125.179 0 .358.006.539.018 2.8.18 4.368 1.782 4.409 4.513A4.36 4.36 0 0 1 117 26.2a1.483 1.483 0 0 1-.984.5.982.982 0 0 1-.833-.659 3.935 3.935 0 0 1-.064-2.181l.082-.25a1.078 1.078 0 0 0 .039-1.033.641.641 0 0 0-.54-.254 1.819 1.819 0 0 0-.389.053 3.031 3.031 0 0 0-2.288 2.588c-.086 2.378 1.342 5.12 5.606 5.689a14.436 14.436 0 0 0 4.374-.04 97.66 97.66 0 0 0-.521 7.891c-.034 1.627-.061 2.582-.081 3.3-.03 1.081-.046 1.618-.046 3.075 0 1.246.184 1.689 1.221 1.689.57 0 1.548-.478 1.6-2.208 1.03-6.823 3.849-10.595 4.576-10.633a6.662 6.662 0 0 1-.06 2.078c-.1.949-.22 2.13-.25 3.55-.125 5.843 1.006 8.811 3.452 9.075 1.211.149 1.436-.4 1.482-.624a.981.981 0 0 0-.787-1.065zM125.1 27.422c.975-6.274 2.444-9.839 2.989-10.085a.777.777 0 0 1 .292.408 8.868 8.868 0 0 1-.816 6.674 8.174 8.174 0 0 1-2.465 3.003zm-25.743 4.341l-.149-.192a.974.974 0 0 0-.823-.288c-.871 0-2.3.416-2.428 1.512-.121.765-.25 2.065-.342 3.452-.653 5.234-2.2 8.13-3.025 8.13a.924.924 0 0 1-.733-.341c-1.068-1.212-1.183-5.218-.341-11.9l.017-.272-.149-.173a.967.967 0 0 0-.776-.255c-.882 0-2.33.42-2.46 1.553a39.062 39.062 0 0 0-.189 6.827c-.593 1.9-1.922 4.984-4.317 4.984a2.366 2.366 0 0 1-1.7-.787 7.231 7.231 0 0 1-1.485-5.139c.162-3.7 1.283-6.605 2.554-6.605a.718.718 0 0 1 .66.286c.4.57.227 1.958-.154 3.028l-.085.226a1.107 1.107 0 0 0-.088 1.071.753.753 0 0 0 .9.215c.746-.14 2.269-.94 2.4-1.938a5.186 5.186 0 0 0-1.028-3.689 2.911 2.911 0 0 0-2.227-.921c-3.25 0-5.89 3.8-6.142 8.84-.011.323-.008.636 0 .941-.887 3.468-1.614 4.679-1.9 4.939-.238-.4-.552-2.321.433-7.49l.02-.277-.149-.173a1.1 1.1 0 0 0-.865-.277 2.166 2.166 0 0 0-2.286 1.416 7.615 7.615 0 0 0-.1.873l-.024.315c-.553 3.1-1.664 4.722-2.477 4.722a.7.7 0 0 1-.441-.28c-.668-.755-1.243-2.725-.93-5.267.409-3.416 1.8-5.711 3.449-5.711a1.205 1.205 0 0 1 1.007.332 2.289 2.289 0 0 1-.076 1.838l-.05.135a1.291 1.291 0 0 0-.116 1.23.818.818 0 0 0 .9.233c.751-.14 2.27-1.026 2.4-2.031a3.173 3.173 0 0 0-.82-2.4 3.752 3.752 0 0 0-2.86-1.062c-2.827 0-6.365 2.139-7.02 8.2-1.059 3.519-2.406 5.159-2.982 5.159-.762 0-1.956-2.252-2.252-7.255a51.587 51.587 0 0 0 5.367-12.886c.824-3.547 1.377-9.306.025-11.009a1.359 1.359 0 0 0-1.09-.559c-3.947 0-7.127 12.153-7.669 20.868a27.226 27.226 0 0 0 .058 4.037c-.884 4.186-2.549 6.852-3.315 6.852-.716 0-1.839-2.135-2.122-6.88a49.189 49.189 0 0 0 5.112-12.273c.786-3.384 1.31-8.88.018-10.508a1.319 1.319 0 0 0-1.057-.541c-3.774 0-6.811 11.589-7.328 19.9-.348 6.009 1.305 10.022 2.826 11.634a2.949 2.949 0 0 0 2.084 1.07c1.842 0 3.5-2.5 4.574-5.107.962 3.124 2.6 5.128 4.281 5.128 1.282 0 2.661-1.237 3.876-3.44.728 2.059 2.158 3.127 3.394 3.127.054 0 .109 0 .17-.007 1.179-.1 2.307-1.015 3.258-2.606.384 2.142 1.215 3.415 2.3 3.415 1.318 0 2.429-1.845 3.229-3.771A5.525 5.525 0 0 0 83 47.329c2.064 0 4.039-1.473 5.54-4.09.923 3.044 2.593 3.538 3.579 3.538s1.945-.712 2.814-2.049l-.029.277a29.308 29.308 0 0 0-5.631 9.629c-1.05 2.935-1.024 6.062.063 7.605a1.932 1.932 0 0 0 1.6.911c1.851 0 4.649-2.534 7.579-24.439.46-3.182.8-6.653.8-6.653zm-47.986 1.988c.36-6.165 2.415-14.455 3.449-15.846.291.879.341 4.073-.64 7.848a55.091 55.091 0 0 1-2.809 7.998zm8.741-.488c.359-6.57 2.574-15.468 3.662-16.826.321.863.4 4.251-.656 8.3a58.077 58.077 0 0 1-3.006 8.526zM94.38 48.854c-1.115 7.679-2.342 10.906-2.905 11.133a.517.517 0 0 1-.311-.25c-.466-.67-.614-2.328.368-4.973a35.705 35.705 0 0 1 2.848-5.91zm-13.049 2.2a1.142 1.142 0 0 0-.671-.317.758.758 0 0 0-.66.563 4.948 4.948 0 0 1-.244.473C79.158 52.85 77.222 53.4 74 53.4a88.1 88.1 0 0 1-13.181-1.5c-5.3-.9-11.342-1.861-16.306-2.207A105.26 105.26 0 0 0 46.538 34c0-.594-.9-.727-1.22-.727-.4 0-1.707.165-1.785 2.288l-.133 2.553c-.466 2.514-1.867 6.761-6.016 6.964-.093 0-.185.007-.277.007a5.248 5.248 0 0 1-4.081-1.842c-1.966-2.223-2.794-6.368-2.215-11.088a25.25 25.25 0 0 1 1.078-4.794c6.623-.152 12.936-3.159 14.472-6.93a4.171 4.171 0 0 0-.195-3.949c-.9-1.34-2.717-1.936-4.95-1.636-4.624.6-9.214 4.479-11.788 9.939-2.911-.823-5.416-3.3-4.78-6.645.918-4.905 7.433-6.508 9.575-6.508a1.886 1.886 0 0 1 .627.07 2.667 2.667 0 0 0 .929.17 1.052 1.052 0 0 0 1.163-.659c.163-.721-.817-1.187-1.195-1.366a2.921 2.921 0 0 0-1.152-.172c-2.919 0-11.343 2.038-12.655 8.6a6.678 6.678 0 0 0 .917 5.222 9.339 9.339 0 0 0 5.666 3.549 23.98 23.98 0 0 0-1.224 5.5c-.54 4.97.538 9.365 2.956 12.06a8.379 8.379 0 0 0 6.408 2.821h.3a8.438 8.438 0 0 0 5.819-2.627 47.565 47.565 0 0 1-.822 4.789q-.544-.009-1.06-.009c-5.931 0-9.245 1.227-10.428 3.857a4.408 4.408 0 0 0 .28 4.364 6.276 6.276 0 0 0 5.219 2.765 5.971 5.971 0 0 0 .968-.079c3.221-.576 5.467-3.345 7.048-8.7a111.338 111.338 0 0 1 16.325 2.306c.975.2 1.958.412 2.939.621 5.341 1.137 10.386 2.21 14.055 2.21 2.11 0 3.572-.365 4.466-1.112a2.6 2.6 0 0 0 1.028-2.184 3.434 3.434 0 0 0-1.469-2.572zm-44.088 6.835a3.36 3.36 0 0 1-1.092.189 2.614 2.614 0 0 1-2.33-1.3 2.947 2.947 0 0 1 .231-3.01c.541-.877 2.266-1.914 7.353-2-1.041 3.447-2.442 5.503-4.162 6.121zm3.331-40.609a4.8 4.8 0 0 1 .836-.08 1.728 1.728 0 0 1 1.5.617 2.407 2.407 0 0 1-.12 2.21c-1.309 2.744-6.05 4.726-10 5.039 1.948-4.166 5.017-7.258 7.784-7.786z" transform="translate(-21.75 -9.688)"/>
+		</symbol>
+		
+		<symbol id="search-icon" viewBox="0 0 16.687 16.688" >
+			<path class="svg-currentColor" d="M931.155 40.747h-.755l-.264-.261a6.212 6.212 0 1 0-.675.675l.263.262v.755l4.773 4.76 1.423-1.422zm-5.731 0a4.291 4.291 0 1 1 4.3-4.291 4.294 4.294 0 0 1-4.3 4.291z" transform="translate(-919.219 -30.25)"/>
+		</symbol>
+		
+		<symbol id="enter-icon" viewBox="0 0 20.063 19" >
+			<path class="svg-currentColor" d="M973 32.968v-.96a3 3 0 0 1 3-3h11.059a3 3 0 0 1 3 3v12.978a3 3 0 0 1-3 3H976a3 3 0 0 1-3-3V44h2v2h13V31h-13v1.968h-2zm-3 8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114z" transform="translate(-970 -29)"/>
+		</symbol>
+		
+		<symbol id="basket-icon" viewBox="0 0 20.63 19.719" >
+			<path data-name="Корзина заполнена" class="basket-fullness" d="M5.42 3.947h13.2l-1.196 9.113-11.026-.111z"/>
+			
+			<path class="basket-outline" d="M1092.58 33.46l-1.21 8.912a2.025 2.025 0 0 1-1.88 1.635h-10.88a2.025 2.025 0 0 1-1.88-1.635l-1.47-10.287a3.738 3.738 0 0 1-.13-1.055H1073a1 1 0 0 1 0-2h4a.992.992 0 0 1 .1 1.98h13.97c1.1 0 1.77 1.131 1.51 2.45zm-13.85 8.518l-1.31-9h13.2l-.03.2-1.18 8.788a.033.033 0 0 0-.01.014h-10.67zm.52 3.009a1.874 1.874 0 1 1-1.88 1.874 1.874 1.874 0 0 1 1.88-1.874zm9 0a1.874 1.874 0 1 1-1.88 1.874 1.874 1.874 0 0 1 1.88-1.874z" transform="translate(-1072 -29.031)"/>
+		</symbol>
+		
+		<!-- FOOTER SVG -->
+		<symbol id="twit" viewBox="0 0 31.375 31.4" >
+			<path class="svg-currentColor" d="M46.427 2352.17a15.69 15.69 0 1 1-15.692 15.69 15.688 15.688 0 0 1 15.692-15.69zm9.138 10.81a7.331 7.331 0 0 1-2.092.57 3.663 3.663 0 0 0 1.6-2.02 7.4 7.4 0 0 1-2.313.89 3.645 3.645 0 0 0-6.207 3.32 10.316 10.316 0 0 1-7.507-3.81 3.655 3.655 0 0 0 1.127 4.87 3.68 3.68 0 0 1-1.65-.46v.05a3.651 3.651 0 0 0 2.922 3.57 3.789 3.789 0 0 1-.96.13 3.861 3.861 0 0 1-.685-.07 3.643 3.643 0 0 0 3.4 2.53 7.29 7.29 0 0 1-4.524 1.56 8.291 8.291 0 0 1-.869-.05 10.354 10.354 0 0 0 15.946-8.73c0-.16 0-.31-.011-.47a7.33 7.33 0 0 0 1.823-1.88z" transform="translate(-30.75 -2352.16)"/>
+		</symbol>
+		
+		<symbol id="Inst" viewBox="0 0 31.376 31.41" >
+			<path class="svg-currentColor" d="M95.865 2352.23a15.69 15.69 0 1 1-15.692 15.69 15.688 15.688 0 0 1 15.692-15.69zm6.271 23.61a1.745 1.745 0 0 0 1.745-1.75v-12.31a1.743 1.743 0 0 0-1.745-1.74H89.809a1.743 1.743 0 0 0-1.745 1.74v12.31a1.745 1.745 0 0 0 1.745 1.75h12.328zm-1.375-9.1a4.921 4.921 0 1 1-9.529 0h-1.38v6.78a.609.609 0 0 0 .611.61h11.065a.609.609 0 0 0 .612-.61v-6.78h-1.38zM96 2365.13a2.848 2.848 0 1 1 0 5.68 2.84 2.84 0 0 1 0-5.68zm3.7-3.31h1.865a.608.608 0 0 1 .611.61v1.86a.608.608 0 0 1-.611.61H99.7a.609.609 0 0 1-.611-.61v-1.86a.609.609 0 0 1 .611-.61z" transform="translate(-80.188 -2352.22)"/>
+		</symbol>
+		
+		<symbol id="FB" viewBox="0 0 31.375 31.41" >
+			<path class="svg-currentColor" d="M144.865 2352.23a15.69 15.69 0 1 1-15.692 15.69 15.687 15.687 0 0 1 15.692-15.69zm.773 24.99v-9.29h2.743l.285-3.09h-3.028v-1.86c0-.89.085-1.26 1.367-1.26h1.764v-3.42h-2.792c-3.294 0-4.082 1.54-4.082 4.34v2.2h-1.889v3.09h1.894v9.29h3.738z" transform="translate(-129.188 -2352.22)"/>
+		</symbol>
+		
+		<symbol id="VK" viewBox="0 0 31.375 31.41" >
+			<path class="svg-currentColor" d="M193.865 2352.23a15.69 15.69 0 1 1-15.692 15.69 15.687 15.687 0 0 1 15.692-15.69zm5.967 18.25a3.1 3.1 0 0 0-.757-2.2 3.7 3.7 0 0 0-2.016-1.09v-.07a2.881 2.881 0 0 0 1.371-1.14 3.211 3.211 0 0 0 .5-1.77 3.133 3.133 0 0 0-.362-1.52 2.6 2.6 0 0 0-1.091-1.05 4.522 4.522 0 0 0-1.446-.48 17.993 17.993 0 0 0-2.269-.11h-4.8v13.59h5.438a8.909 8.909 0 0 0 2.332-.25 4.783 4.783 0 0 0 1.686-.86 3.684 3.684 0 0 0 1.032-1.27 3.909 3.909 0 0 0 .383-1.78zm-4.372-5.59a1.517 1.517 0 0 0-.169-.67 1 1 0 0 0-.527-.5 2.111 2.111 0 0 0-.8-.17c-.308 0-.766-.01-1.374-.01h-.237v2.88h.43c.583 0 .994-.01 1.228-.02a2.044 2.044 0 0 0 .727-.19 1.129 1.129 0 0 0 .563-.53 1.9 1.9 0 0 0 .157-.79zm.856 5.53a1.673 1.673 0 0 0-.255-.99 1.533 1.533 0 0 0-.767-.54 2.658 2.658 0 0 0-.853-.13c-.362-.01-.849-.01-1.456-.01h-.63v3.4h.184c.888 0 1.5-.01 1.842-.02a2.867 2.867 0 0 0 1.041-.24 1.381 1.381 0 0 0 .68-.59 1.813 1.813 0 0 0 .214-.88z" transform="translate(-178.188 -2352.22)"/>
+		</symbol>
+		
+		<symbol id="HTML_Academy-logo" viewBox="0 0 107.622 36.69" >
+			<path class="svg-white" d="M1029.6 2359.28a1.983 1.983 0 0 0 .55-.1v1.33a3.162 3.162 0 0 1-1.17.21 1.663 1.663 0 0 1-1.66-.97 4.791 4.791 0 0 1-3.13 1.07 2.6 2.6 0 0 1-2.9-2.54c0-2.13 1.97-2.78 3.7-2.78a10.909 10.909 0 0 1 2.16.24v-.29c0-1.04-.76-1.77-2.18-1.77a7.336 7.336 0 0 0-2.99.64v-1.69a10.041 10.041 0 0 1 3.18-.55c2.35 0 3.84 1.12 3.84 3.63v2.97a.533.533 0 0 0 .6.6m-6.41-1.12a1.348 1.348 0 0 0 1.55 1.23 3.373 3.373 0 0 0 2.41-.99v-1.4a9.984 9.984 0 0 0-1.8-.21c-1.05 0-2.16.33-2.16 1.37m12.3-6.08a4.919 4.919 0 0 1 2.56.64v1.69a4.059 4.059 0 0 0-2.3-.69 2.737 2.737 0 1 0-.03 5.46 5 5 0 0 0 2.42-.64v1.71a6.285 6.285 0 0 1-2.75.57 4.192 4.192 0 0 1-4.48-4.3 4.3 4.3 0 0 1 4.58-4.44m12.12 7.2a1.983 1.983 0 0 0 .55-.1v1.33a3.162 3.162 0 0 1-1.17.21 1.663 1.663 0 0 1-1.66-.97 4.791 4.791 0 0 1-3.13 1.07 2.6 2.6 0 0 1-2.9-2.54c0-2.13 1.97-2.78 3.69-2.78a11.01 11.01 0 0 1 2.17.24v-.29c0-1.04-.77-1.77-2.18-1.77a7.336 7.336 0 0 0-2.99.64v-1.69a9.985 9.985 0 0 1 3.18-.55c2.35 0 3.83 1.12 3.83 3.63v2.97a.54.54 0 0 0 .61.6m-6.41-1.12a1.348 1.348 0 0 0 1.55 1.23 3.39 3.39 0 0 0 2.41-.99v-1.4a10.093 10.093 0 0 0-1.8-.21c-1.06 0-2.16.33-2.16 1.37m16.67-9.66v12.1h-1.65v-1.32a3.876 3.876 0 0 1-3.18 1.54 4.378 4.378 0 0 1 0-8.74 3.861 3.861 0 0 1 2.99 1.29v-4.87h1.84zm-4.51 5.2a2.756 2.756 0 0 0 0 5.5 2.89 2.89 0 0 0 2.65-1.75v-2.02a2.905 2.905 0 0 0-2.65-1.73m10.51-1.62c3.3 0 4.44 2.66 3.91 5.06h-6.24c.21 1.49 1.66 2.11 3.18 2.11a6.036 6.036 0 0 0 2.63-.59v1.59a7.192 7.192 0 0 1-2.98.57c-2.54 0-4.7-1.45-4.7-4.37a4.153 4.153 0 0 1 4.2-4.37m.09 1.53a2.269 2.269 0 0 0-2.44 2.15h4.6a1.964 1.964 0 0 0-2.16-2.15m5.7 6.99v-8.3h1.64v1.04a3.806 3.806 0 0 1 2.77-1.26 2.813 2.813 0 0 1 2.59 1.33 4.106 4.106 0 0 1 2.9-1.33 3.042 3.042 0 0 1 3.15 3.33v5.19h-1.85v-5.14a1.577 1.577 0 0 0-1.64-1.74 2.774 2.774 0 0 0-2.06 1.12 5.459 5.459 0 0 1 .04.57v5.19h-1.85v-5.14a1.577 1.577 0 0 0-1.64-1.74 2.919 2.919 0 0 0-2.2 1.28v5.6h-1.85zm21.21-8.3h1.93l-3.89 9.42c-.89 2.16-2.07 2.89-3.33 2.89a5.088 5.088 0 0 1-1.09-.14v-1.58a2.787 2.787 0 0 0 .85.13c.9 0 1.57-.64 2.05-1.94l.18-.41-3.94-8.37h1.97l2.8 6.26zm-67.14-18.33v4.72a3.8 3.8 0 0 1 2.68-1.14 3.231 3.231 0 0 1 3.42 3.39v5.13h-1.85v-4.89a1.8 1.8 0 0 0-1.93-1.99 2.927 2.927 0 0 0-2.32 1.39v5.49h-1.85v-12.1h1.85zm11.17.85v2.96h3.01v1.62h-3.01v3.8c0 1.09.5 1.45 1.57 1.45a4.608 4.608 0 0 0 1.68-.32v1.59a6.9 6.9 0 0 1-2.23.36 2.539 2.539 0 0 1-2.85-2.73v-4.15h-1.49v-1.62h1.49v-2.51zm5.37 11.25v-8.29h1.64v1.03a3.806 3.806 0 0 1 2.77-1.26 2.833 2.833 0 0 1 2.59 1.33 4.15 4.15 0 0 1 2.91-1.33 3.048 3.048 0 0 1 3.14 3.34v5.18h-1.85v-5.13a1.585 1.585 0 0 0-1.64-1.75 2.783 2.783 0 0 0-2.06 1.13 5.459 5.459 0 0 1 .04.57v5.18h-1.85v-5.13a1.585 1.585 0 0 0-1.64-1.75 2.948 2.948 0 0 0-2.2 1.28v5.6h-1.85zm15.76 0h1.84v-12.1h-1.84v12.1zm-56.207-13.52l-.152-.02-14.484 1.52v26.55l14.484 8.61 14.489-8.61v-26.55zm12.437 26.97l-12.589 7.49-12.589-7.49v-10.88l12.535 7.46.021 1.35-8.6-5.12-.013 1.32 8.634 5.18.021 1.39-8.631-5.13-.012 1.31 8.633 5.19 8.719-5.22v-1.31h-.01v-4.29l3.88-2.32v11.07zm-.01-12.48l-3.44 2.03-1.59.94-7.586-4.51-.013 1.31 6.479 3.86-.06.03-.13.08-.93.54-5.346-3.18-.013 1.31 4.219 2.52-.99.66-.03.02-3.186-1.88-.013 1.31 2.089 1.23-2.128 1.28-12.473-7.41 12.491-7.51zm.01-1.32l-12.657-7.46-12.518 7.45v-9.95l12.589-1.32 12.589 1.32v9.96z" transform="translate(-985.188 -2332.53)"/>
+		</symbol>
+	</svg>
+	
+<script src="js/nouislider.wNumb.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
