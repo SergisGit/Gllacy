@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" class="svg">
+	<radialGradient id="grad" cx="50%" y="50%">
+		<stop offset="0%" stop-color="#cff6e1"
+		class="stop-1"/>
+		<stop offset="100%" stop-color="#849d8f"
+		class="stop-2"/>
+	</radialGradient>
+	<defs>
+		<filter id="blurring">
+			<feGaussianBlur stdDeviation="10"/>
+		</filter>
+	</defs>
+	<g>
+		<rect width="100%" height="100%" fill="url(#grad)" filter="url(#blurring)" r="50%">
+		</rect>
+	</g>
+</svg>

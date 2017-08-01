@@ -947,20 +947,21 @@ td.td-product-link {
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
+  background-position: center -100px;
 }
 
 .index-toggle-1:checked~.toggle-page {
-	background-image: url("../img/bg-index-1.png");
+	background-image: url("../img/bg-index-1.svg");
 	background-color: #849d8f;
 }
 
 .index-toggle-2:checked~.toggle-page {
-	background-image: url("../img/bg-index-2.png");
+	background-image: url("../img/bg-index-2.svg");
 	background-color: #8996a6;
 }
 
 .index-toggle-3:checked~.toggle-page {
-	background-image: url("../img/bg-index-3.png");
+	background-image: url("../img/bg-index-3.svg");
 	background-color: #9d8b84;
 }
 
